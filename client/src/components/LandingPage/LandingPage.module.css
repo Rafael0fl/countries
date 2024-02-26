@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*#######################################################*/
+
+.main{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 0px 500px rgba(0, 0, 0,0.7);
+    background-color: rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-rows: 4fr 6fr; 
+}
+
+/*#######################################################*/
+
+.tittles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.marco{
+    width: 70%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+/*#######################################################*/
+
+.divButton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.planet{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    &&:hover{
+        border: 3px solid white;
+    }
+}
+.all:hover > .buttonHome{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    cursor: default;
+}
+.buttonHome{
+    position: absolute;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/*
+! [1] Al hacer hover sobre el boton Home la imagen del planeta
+! pierde el efecto de hover.
+*/
+
+/*#######################################################*/
+/*####              Responsive mobile               #####*/
+/*#######################################################*/
