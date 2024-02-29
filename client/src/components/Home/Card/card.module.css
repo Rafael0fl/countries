@@ -1,0 +1,36 @@
+.card{
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    display: grid;
+    position: relative;
+}
+.divImg{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid rgb(246,184,24);
+    overflow: hidden;
+}
+.divInfo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recuadro{
+    height: 40px;
+    padding: 0px 10px;
+    background-color: rgba(255, 245, 55, 0.8);
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

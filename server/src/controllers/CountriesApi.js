@@ -11,7 +11,7 @@ export const getCountriesApi = async()=>{
             const { name,flags,continents,capital,population } = pais;
             await country.create({
                 nombre: name.common,
-                imagenBandera: flags.svg,
+                imagenBandera: flags.png,
                 continente: continents[0],
                 capital: capital ? capital[0] : 'no tiene',
                 poblacion: population ? population : 0

@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/3.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.countryCard{
+    width: 550px;
+    height: 550px;
+    border: 5px solid black;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: rgba(245, 245, 245, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divImg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.divInfo{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border-top: 3px solid black;
+}

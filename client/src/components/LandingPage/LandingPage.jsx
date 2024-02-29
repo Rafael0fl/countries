@@ -5,10 +5,10 @@ import tierraGirandoGif from '../../assets/27.gif';
 
 const LandingPage = ()=>{
 
-    const navigate= useNavigate();
+    const redirect= useNavigate();
 
     const handleGoHome = ()=>{
-        navigate('/home');
+        redirect('/home');
     };
 
     return(

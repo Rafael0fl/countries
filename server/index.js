@@ -16,7 +16,7 @@ const main = async()=>{
     /* CONECTO CON LA BASE DE DATOS */
     try{
         await sequelize.authenticate();//force:true
-        await sequelize.sync({force:false});
+        await sequelize.sync({force:true});
         console.log('\x1b[32m%s\x1b[0m','\n\tCONEXION EXITOSA A LA DB\n');
     } 
     catch(error){
@@ -24,7 +24,7 @@ const main = async()=>{
     }
 
     /* TRAIGO LOS DATOS DE LA API A LA BASE DE DATOS */
-    //getCountriesApi();
+    getCountriesApi();
 };
 
 main();

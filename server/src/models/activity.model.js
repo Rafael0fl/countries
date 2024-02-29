@@ -1,6 +1,5 @@
 import { DataTypes } from "sequelize";
-
-import sequelize from '../database/db.js';
+import { sequelize } from '../database/db.js';
 
 const hours48 = Array.from({ length: 48 }, (_, index) => index + 1);
 

@@ -1,5 +1,4 @@
 import { DataTypes } from 'sequelize';
-
 import { sequelize } from '../database/db.js';
 
 export const country = sequelize.define(
@@ -10,25 +9,25 @@ export const country = sequelize.define(
             primaryKey:true,
             autoIncrement: true
           },
-          nombre: {
-            type: DataTypes.STRING,
-            allowNull: true,
-          },
-          imagenBandera: {
+        nombre: {
             type: DataTypes.STRING,
             allowNull: false,
           },
-          continente: {
+        imagenBandera: {
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
           },
-          capital: {
+        continente: {
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
           },
-          poblacion: {
+        capital: {
+            type: DataTypes.STRING,
+            allowNull: false,
+          },
+        poblacion: {
             type: DataTypes.INTEGER,
-            allowNull: true,
+            allowNull: false,
           }
     },
     {
